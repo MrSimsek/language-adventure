@@ -1,0 +1,1263 @@
+{
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Café Sonnenschein",
+      "location": "Prenzlauer Berg, Berlin",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You step into Café Sonnenschein, a cozy café in Prenzlauer Berg. The smell of fresh coffee fills the air, and the morning light streams through the windows."
+        },
+        {
+          "type": "narration",
+          "text": "A friendly waitress approaches your table with a warm smile."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Good morning! Welcome to Café Sonnenschein.",
+          "germanText": "Guten Morgen! Willkommen im Café Sonnenschein."
+        },
+        {
+          "type": "narration",
+          "text": "The waitress smiles. She seems happy you're trying German."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "What would you like to drink?",
+          "germanText": "Was möchten Sie trinken?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1a",
+          "text": "I would like a coffee.",
+          "germanText": "Ich hätte gerne einen Kaffee.",
+          "nextSceneId": "scene-2"
+        },
+        {
+          "id": "choice-1b",
+          "text": "A cappuccino, please.",
+          "germanText": "Einen Cappuccino, bitte.",
+          "nextSceneId": "scene-2"
+        },
+        {
+          "id": "choice-1c",
+          "text": "What do you recommend?",
+          "germanText": "Was empfehlen Sie?",
+          "nextSceneId": "scene-2"
+        },
+        {
+          "id": "choice-1d",
+          "text": "Do you speak English?",
+          "germanText": "Sprechen Sie Englisch?",
+          "nextSceneId": "scene-2"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Was möchten Sie trinken?",
+        "translation": "What would you like to drink?",
+        "explanation": "'Möchten' means 'would like' (polite form), 'Sie' is the formal 'you', and 'trinken' means 'to drink'. A common café question!",
+        "pronunciation": "vahs MURKH-ten zee TRIN-ken"
+      }
+    },
+    {
+      "id": "scene-2",
+      "title": "Was empfehlen Sie?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's eyes light up with enthusiasm. She leans in slightly, as if sharing a secret."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "I recommend our special latte macchiato with oat milk. It's on special today!",
+          "germanText": "Ich empfehle unseren besonderen Latte Macchiato mit Hafermilch. Er ist heute im Angebot!"
+        },
+        {
+          "type": "narration",
+          "text": "She points to a chalkboard behind the counter showing today's specials."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2a",
+          "text": "Yes, gladly!",
+          "germanText": "Ja, gerne!",
+          "nextSceneId": "scene-3"
+        },
+        {
+          "id": "choice-2b",
+          "text": "I don't know… maybe a normal coffee.",
+          "germanText": "Ich weiß nicht… vielleicht einen normalen Kaffee.",
+          "nextSceneId": "scene-3"
+        },
+        {
+          "id": "choice-2c",
+          "text": "How much is it?",
+          "germanText": "Was kostet er?",
+          "nextSceneId": "scene-3"
+        },
+        {
+          "id": "choice-2d",
+          "text": "Do you have oat milk?",
+          "germanText": "Haben Sie Hafermilch?",
+          "nextSceneId": "scene-3"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Ich empfehle",
+        "translation": "I recommend",
+        "explanation": "'Empfehlen' means 'to recommend'. The waitress is helping you discover something new!",
+        "pronunciation": "ikh emp-FEH-leh"
+      }
+    },
+    {
+      "id": "scene-3",
+      "title": "Hafermilch im Angebot",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress nods enthusiastically and gestures toward the counter where various milk alternatives are displayed."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Yes, we have oat milk! And the latte macchiato is on special today.",
+          "germanText": "Ja, wir haben Hafermilch! Und der Latte Macchiato ist heute im Angebot."
+        },
+        {
+          "type": "narration",
+          "text": "She smiles warmly, clearly proud of their selection."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-3a",
+          "text": "Then I'll take the latte macchiato with oat milk.",
+          "germanText": "Dann nehme ich den Latte Macchiato mit Hafermilch.",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-3b",
+          "text": "Sounds good… how much is it?",
+          "germanText": "Klingt gut… wie viel kostet das?",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-3c",
+          "text": "Do you have something strong? I'm very tired.",
+          "germanText": "Haben Sie auch etwas Starkes? Ich bin sehr müde.",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-3d",
+          "text": "Surprise me.",
+          "germanText": "Überraschen Sie mich.",
+          "nextSceneId": "scene-4"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Im Angebot",
+        "translation": "On special / On sale",
+        "explanation": "'Angebot' means 'offer' or 'special deal'. 'Im Angebot' means something is on sale or discounted. Great to know when shopping!",
+        "pronunciation": "im AHN-geh-bot"
+      }
+    },
+    {
+      "id": "scene-4",
+      "title": "Der Geheime Morgenblitz",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's face breaks into a mischievous grin. She disappears behind the counter for a moment."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Perfect! I'll bring you our secret 'Morgenblitz' - only for brave people!",
+          "germanText": "Perfekt! Ich bringe Ihnen unseren geheimen 'Morgenblitz' - nur für mutige Leute!"
+        },
+        {
+          "type": "narration",
+          "text": "You hear the sound of a coffee machine and some mysterious clinking. A few minutes later, she returns with a steaming cup that seems to sparkle slightly."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-4a",
+          "text": "Wow… what's in it?",
+          "germanText": "Wow… was ist da drin?",
+          "nextSceneId": "scene-5"
+        },
+        {
+          "id": "choice-4b",
+          "text": "Looks dangerous… I'll try it anyway.",
+          "germanText": "Sieht gefährlich aus… ich probiere es trotzdem.",
+          "nextSceneId": "scene-5"
+        },
+        {
+          "id": "choice-4c",
+          "text": "I actually just wanted coffee…",
+          "germanText": "Ich wollte eigentlich nur Kaffee…",
+          "nextSceneId": "scene-5"
+        },
+        {
+          "id": "choice-4d",
+          "text": "Take a sip without asking.",
+          "germanText": "Ohne zu fragen einen Schluck nehmen.",
+          "nextSceneId": "scene-5"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Nur für mutige Leute",
+        "translation": "Only for brave people",
+        "explanation": "'Mutige' means 'brave' or 'courageous', and 'Leute' means 'people'. The waitress is challenging you!",
+        "pronunciation": "noor foor MOO-ti-geh LOY-teh"
+      }
+    },
+    {
+      "id": "scene-5",
+      "title": "Der erste Schluck",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You take a cautious sip. The drink is unlike anything you've ever tasted - it's warm, energizing, and somehow... magical?"
+        },
+        {
+          "type": "narration",
+          "text": "A strange tingling sensation spreads through your body, and you feel more alert than ever."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Are you still alive?",
+          "germanText": "Lebst du noch?"
+        },
+        {
+          "type": "narration",
+          "text": "She watches you with an amused expression, clearly enjoying your reaction."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-5a",
+          "text": "Whoa… this is incredible!",
+          "germanText": "Woah… das ist unglaublich!",
+          "nextSceneId": "scene-6"
+        },
+        {
+          "id": "choice-5b",
+          "text": "Why… is it tingling?",
+          "germanText": "Warum… prickelt es?",
+          "nextSceneId": "scene-6"
+        },
+        {
+          "id": "choice-5c",
+          "text": "I think I'm waking up! Very awake!",
+          "germanText": "Ich glaube, ich werde wach! Sehr wach!",
+          "nextSceneId": "scene-6"
+        },
+        {
+          "id": "choice-5d",
+          "text": "Pretend to faint dramatically.",
+          "germanText": "Dramatisch ohnmächtig werden.",
+          "nextSceneId": "scene-6"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Lebst du noch?",
+        "translation": "Are you still alive?",
+        "explanation": "A playful question! 'Lebst' means 'you live' and 'noch' means 'still'. The waitress is checking if you survived the mysterious drink!",
+        "pronunciation": "lepst doo nokh"
+      }
+    },
+    {
+      "id": "scene-6",
+      "title": "Sehr wach!",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You notice something strange - German words are coming to you more easily. Your mind feels sharper, more connected to the language."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "You're speaking German very quickly now! The drink seems to have an effect...",
+          "germanText": "Sie sprechen jetzt sehr schnell Deutsch! Das Getränk scheint eine Wirkung zu haben..."
+        },
+        {
+          "type": "narration",
+          "text": "She winks knowingly, as if this happens often."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-6a",
+          "text": "Try speaking rapid German: 'I… well… uh… today… coffee… language… help!'",
+          "germanText": "Ich… also… äh… heute… Kaffee… Sprache… Hilfe!",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6b",
+          "text": "Ask what the mysterious ingredient is: 'What exactly is actually in it?'",
+          "germanText": "Was genau ist da eigentlich drin?",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6c",
+          "text": "Get overly confident: 'I can probably speak perfect German now.'",
+          "germanText": "Ich kann jetzt bestimmt perfekt Deutsch sprechen.",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6d",
+          "text": "Take another big sip.",
+          "germanText": "Noch einen großen Schluck nehmen.",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Sehr schnell Deutsch sprechen",
+        "translation": "To speak German very quickly",
+        "explanation": "'Schnell' means 'fast' or 'quickly'. The waitress is hinting that the drink might have magical language-learning properties!",
+        "pronunciation": "zehr shnel doytsh SHPRECH-en"
+      }
+    },
+    {
+      "id": "scene-7",
+      "title": "Die Zutaten",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress leans in closer, her voice dropping to a whisper."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "A little bit of magic... and a lot of espresso! But that's our secret.",
+          "germanText": "Ein bisschen Magie... und viel Espresso! Aber das ist unser Geheimnis."
+        },
+        {
+          "type": "narration",
+          "text": "She puts a finger to her lips with a playful smile."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-7a",
+          "text": "Promise to keep the secret",
+          "germanText": "Versprechen, das Geheimnis zu bewahren",
+          "nextSceneId": "scene-8"
+        },
+        {
+          "id": "choice-7b",
+          "text": "Ask if you can order it again",
+          "germanText": "Fragen, ob Sie es nochmal bestellen können",
+          "nextSceneId": "scene-8"
+        },
+        {
+          "id": "choice-7c",
+          "text": "Feel the energy and decide to explore Berlin",
+          "germanText": "Die Energie spüren und beschließen, Berlin zu erkunden",
+          "nextSceneId": "scene-8"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Ein bisschen Magie",
+        "translation": "A little bit of magic",
+        "explanation": "'Bisschen' means 'a little bit' and 'Magie' means 'magic'. The waitress is being playful, but maybe there's something special about this drink!",
+        "pronunciation": "ine BIS-khen mah-GEE"
+      }
+    },
+    {
+      "id": "scene-8",
+      "title": "Auf Wiedersehen",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You finish your drink and feel energized, ready to explore Berlin. The waitress clears your cup with a warm smile."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Come back anytime! Good luck with your German adventure!",
+          "germanText": "Kommen Sie jederzeit wieder! Viel Erfolg bei Ihrem deutschen Abenteuer!"
+        },
+        {
+          "type": "narration",
+          "text": "You thank her and step out into the vibrant streets of Prenzlauer Berg, feeling more confident in your German."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-8a",
+          "text": "Leave the café and explore",
+          "nextSceneId": "scene-9"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Kommen Sie jederzeit wieder",
+        "translation": "Come back anytime",
+        "explanation": "'Jederzeit' means 'anytime' and 'wieder' means 'again' or 'back'. A warm invitation to return!",
+        "pronunciation": "KOM-men zee YEH-der-tsite VEE-der"
+      }
+    },
+    {
+      "id": "scene-9",
+      "title": "Auf der Straße",
+      "location": "Prenzlauer Berg",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You step out onto the street. The morning air is crisp, and the neighborhood is coming to life."
+        },
+        {
+          "type": "narration",
+          "text": "A colorful sign on a nearby building catches your eye - what does it say?",
+          "germanText": "Sie treten auf die Straße. Ein Schild fällt Ihnen ins Auge - was steht darauf?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-9a",
+          "text": "Go closer to read it",
+          "germanText": "Näher gehen, um es zu lesen",
+          "nextSceneId": "scene-10"
+        },
+        {
+          "id": "choice-9b",
+          "text": "Ask a passerby what it says",
+          "germanText": "Einen Passanten fragen, was darauf steht",
+          "nextSceneId": "scene-10"
+        },
+        {
+          "id": "choice-9c",
+          "text": "Continue walking - you'll see it later",
+          "germanText": "Weitergehen - Sie sehen es später",
+          "nextSceneId": "scene-10"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Was steht auf dem Schild?",
+        "translation": "What does the sign say?",
+        "explanation": "'Steht' means 'stands' or 'is written', 'auf' means 'on', and 'Schild' means 'sign'. A useful phrase for reading signs in German!",
+        "pronunciation": "vahs shteyt owf dehm shilt"
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "Die Buchhandlung",
+      "location": "Prenzlauer Berg",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You enter a charming bookstore. The shelves are filled with books in German, and the smell of old paper fills the air."
+        },
+        {
+          "type": "narration",
+          "text": "A friendly bookseller looks up from behind the counter and smiles."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Bookseller",
+          "text": "Are you looking for something specific?",
+          "germanText": "Suchen Sie etwas Bestimmtes?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-10a",
+          "text": "Yes, I'm learning German. Do you have beginner books?",
+          "germanText": "Ja, ich lerne Deutsch. Haben Sie Bücher für Anfänger?",
+          "nextSceneId": "scene-11"
+        },
+        {
+          "id": "choice-10b",
+          "text": "I'm just looking around, thanks",
+          "germanText": "Ich schaue mich nur um, danke",
+          "nextSceneId": "scene-11"
+        },
+        {
+          "id": "choice-10c",
+          "text": "What does 'Rabatt' mean?",
+          "germanText": "Was bedeutet 'Rabatt'?",
+          "nextSceneId": "scene-11"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Suchen Sie etwas Bestimmtes?",
+        "translation": "Are you looking for something specific?",
+        "explanation": "'Suchen' means 'to search' or 'to look for', 'Bestimmtes' means 'specific'. Shopkeepers often ask this to help you find what you need!",
+        "pronunciation": "ZOO-khen zee ET-vahs beh-STIM-tes"
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "Am Bahnhof",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You arrive at Berlin Hauptbahnhof, the city's main train station. The massive glass structure is bustling with travelers."
+        },
+        {
+          "type": "narration",
+          "text": "People rush past with suitcases, announcements echo in German, and you need to navigate through the busy crowd to find your platform."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-11a",
+          "text": "Continue",
+          "nextSceneId": "scene-12"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Entschuldigung",
+        "translation": "Excuse me / Sorry",
+        "explanation": "A versatile word! Use it to get attention, apologize, or say 'excuse me'. Very important for navigating crowded places politely.",
+        "pronunciation": "ent-SHUL-di-goong"
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "Wohin wollen Sie?",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You approach the ticket counter. Behind it, a friendly ticket agent looks up from their computer."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Where do you want to go?",
+          "germanText": "Wohin wollen Sie?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-12a",
+          "text": "Show your phone with the destination",
+          "germanText": "Zeigen Sie Ihr Handy mit dem Ziel",
+          "nextSceneId": "scene-13"
+        },
+        {
+          "id": "choice-12b",
+          "text": "Tell them directly",
+          "germanText": "Sagen Sie es direkt",
+          "nextSceneId": "scene-13"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Wohin wollen Sie?",
+        "translation": "Where do you want to go?",
+        "explanation": "A question about destination. 'Wohin' means 'where to', 'wollen' means 'to want', and 'Sie' is the formal 'you'. Note the formal address!",
+        "pronunciation": "voh-HIN VOLL-en zee"
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "Nach Potsdam",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You take a deep breath and try to remember the German words you've been practicing."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "You",
+          "text": "I need to go to Potsdam.",
+          "germanText": "Ich muss nach Potsdam."
+        },
+        {
+          "type": "narration",
+          "text": "The ticket agent types quickly on their computer, then looks up with urgency."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "The train is leaving soon!",
+          "germanText": "Der Zug fährt gleich ab!"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-13a",
+          "text": "Continue",
+          "nextSceneId": "scene-14"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Ich muss nach...",
+        "translation": "I need to go to...",
+        "explanation": "'Muss' means 'must' or 'need to'. 'Nach' is used for cities and countries (directional). Very useful for travel!",
+        "pronunciation": "ikh moos nahkh"
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "Der Zug fährt gleich ab",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The ticket agent looks at the schedule on their screen, then back at you with urgency."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "The train is leaving soon! Which platform?",
+          "germanText": "Der Zug fährt gleich ab! Welcher Bahnsteig?"
+        },
+        {
+          "type": "narration",
+          "text": "You can hear a train announcement in the background, adding to the sense of urgency."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-14a",
+          "text": "Panic and ask which platform",
+          "germanText": "In Panik geraten und nach dem Bahnsteig fragen",
+          "nextSceneId": "scene-15"
+        },
+        {
+          "id": "choice-14b",
+          "text": "Stay calm and ask politely",
+          "germanText": "Ruhig bleiben und höflich fragen",
+          "nextSceneId": "scene-15"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Der Zug fährt gleich ab",
+        "translation": "The train is leaving soon",
+        "explanation": "'Zug' means train, 'fährt' means 'drives/goes', 'gleich' means 'soon' or 'right away', and 'ab' means 'off' or 'away'. A phrase you'll hear often at stations!",
+        "pronunciation": "dehr tsook fehrt glikh ahp"
+      }
+    },
+    {
+      "id": "scene-15",
+      "title": "Welcher Bahnsteig?",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The ticket agent looks at you expectantly, waiting for your response."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Which platform?",
+          "germanText": "Welcher Bahnsteig?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-15a",
+          "text": "Continue",
+          "nextSceneId": "scene-16"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Welcher Bahnsteig?",
+        "translation": "Which platform?",
+        "explanation": "'Welcher' means 'which' (masculine form), and 'Bahnsteig' means platform. Essential vocabulary for train travel!",
+        "pronunciation": "VEL-kher BAHN-shtike"
+      }
+    },
+    {
+      "id": "scene-16",
+      "title": "Bahnsteig drei",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The ticket agent points toward the platforms and speaks clearly."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Platform three!",
+          "germanText": "Bahnsteig drei!"
+        },
+        {
+          "type": "narration",
+          "text": "You thank them and rush toward the platforms, looking for number three."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-16a",
+          "text": "Continue",
+          "nextSceneId": "scene-17"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Bahnsteig drei",
+        "translation": "Platform three",
+        "explanation": "Numbers in German! 'Drei' means three. Note: platform numbers are often just stated simply like this.",
+        "pronunciation": "BAHN-shtike dry"
+      }
+    },
+    {
+      "id": "scene-17",
+      "title": "Aus dem Weg!",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "As you hurry through the station, a passenger with a large suitcase rushes past you."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Passenger",
+          "text": "Out of the way, please!",
+          "germanText": "Aus dem Weg, bitte!"
+        },
+        {
+          "type": "narration",
+          "text": "You step aside quickly, understanding the urgency in their voice."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-17a",
+          "text": "Continue",
+          "nextSceneId": "scene-18"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Aus dem Weg, bitte!",
+        "translation": "Out of the way, please!",
+        "explanation": "A polite but urgent request. 'Aus' means 'out of', 'dem Weg' means 'the way'. Adding 'bitte' (please) makes it more polite even in a rush!",
+        "pronunciation": "ows dehm vek, BIH-teh"
+      }
+    },
+    {
+      "id": "scene-18",
+      "title": "Eine kleine Hilfe",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "In your rush, you accidentally bump into an elderly woman. Her shopping bag falls to the ground, and items scatter."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Elderly Woman",
+          "text": "Oh no!",
+          "germanText": "Oh nein!"
+        },
+        {
+          "type": "narration",
+          "text": "She looks distressed, and you feel terrible. The train is leaving soon, but you can't just leave her like this."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-18a",
+          "text": "Stop to help her",
+          "germanText": "Anhalten, um ihr zu helfen",
+          "nextSceneId": "scene-19"
+        },
+        {
+          "id": "choice-18b",
+          "text": "Rush past - you're too late",
+          "germanText": "Vorbeieilen - Sie sind zu spät",
+          "nextSceneId": "scene-20b"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Oh nein!",
+        "translation": "Oh no!",
+        "explanation": "A universal expression of dismay! 'Nein' means 'no'. Very useful in many situations.",
+        "pronunciation": "oh nine"
+      }
+    },
+    {
+      "id": "scene-19",
+      "title": "Das ist sehr nett",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You quickly help her gather her belongings, picking up each item carefully and placing them back in her bag."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Elderly Woman",
+          "text": "That's very nice of you. Thank you!",
+          "germanText": "Das ist sehr nett von Ihnen. Danke!"
+        },
+        {
+          "type": "narration",
+          "text": "She smiles gratefully, and you feel good about helping, even though you're now running even later."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-19a",
+          "text": "Continue",
+          "nextSceneId": "scene-20"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Das ist sehr nett",
+        "translation": "That's very nice",
+        "explanation": "'Sehr' means 'very' and 'nett' means 'nice' or 'kind'. Germans often use 'nett' to describe friendly people or kind actions.",
+        "pronunciation": "dahs ist zehr net"
+      }
+    },
+    {
+      "id": "scene-20",
+      "title": "Habe ich es geschafft?",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You rush toward platform three, your heart pounding. The train is still there!"
+        },
+        {
+          "type": "narration",
+          "text": "Did I make it? You rush to the platform just in time!"
+        },
+        {
+          "type": "narration",
+          "text": "You board the train with seconds to spare, breathing a sigh of relief."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-20a",
+          "text": "Continue to next adventure",
+          "nextSceneId": "scene-21"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Habe ich es geschafft?",
+        "translation": "Did I make it? / Did I succeed?",
+        "explanation": "'Geschafft' comes from 'schaffen' (to manage, to accomplish). This phrase is perfect for checking if you succeeded at something!",
+        "pronunciation": "HAH-beh ikh es geh-SHAHFT"
+      }
+    },
+    {
+      "id": "scene-20b",
+      "title": "Zu spät",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You arrive at platform three, but the train is already pulling away. You watch it disappear into the distance."
+        },
+        {
+          "type": "narration",
+          "text": "I'm too late. The train has left."
+        },
+        {
+          "type": "narration",
+          "text": "You'll need to check the schedule for the next train to Potsdam."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-20c",
+          "text": "Check the next train",
+          "germanText": "Den nächsten Zug prüfen",
+          "nextSceneId": "scene-20"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Ich bin zu spät",
+        "translation": "I'm too late",
+        "explanation": "'Spät' means 'late'. 'Zu spät' means 'too late'. A phrase you hope not to use, but good to know!",
+        "pronunciation": "ikh bin tsoo shpeht"
+      }
+    },
+    {
+      "id": "scene-21",
+      "title": "Die neue Wohnung",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You've moved into your new apartment in Berlin. The space is bright and airy, with large windows overlooking the neighborhood."
+        },
+        {
+          "type": "narration",
+          "text": "Cardboard boxes are stacked everywhere, filled with your belongings. You take a deep breath and look around."
+        },
+        {
+          "type": "narration",
+          "text": "Where do I start?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-21a",
+          "text": "Continue",
+          "nextSceneId": "scene-22"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Wo fange ich an?",
+        "translation": "Where do I start?",
+        "explanation": "'Fangen' means 'to start' or 'to begin', and 'an' is a separable prefix. This is a common expression when facing a big task!",
+        "pronunciation": "voh FAHN-geh ikh ahn"
+      }
+    },
+    {
+      "id": "scene-22",
+      "title": "Willkommen im Haus!",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Just as you're about to start unpacking, there's a gentle knock at the door."
+        },
+        {
+          "type": "narration",
+          "text": "You open it to find a friendly couple standing in the hallway, smiling warmly."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "Welcome to the building! We're your neighbors. Can we help you move in?",
+          "germanText": "Willkommen im Haus! Wir sind Ihre Nachbarn. Können wir Ihnen beim Einzug helfen?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-22a",
+          "text": "Thank them warmly",
+          "germanText": "Ihnen herzlich danken",
+          "nextSceneId": "scene-23"
+        },
+        {
+          "id": "choice-22b",
+          "text": "Invite them in immediately",
+          "germanText": "Sie sofort einladen",
+          "nextSceneId": "scene-23"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Willkommen im Haus!",
+        "translation": "Welcome to the building!",
+        "explanation": "'Willkommen' means 'welcome'. 'Im Haus' means 'in the house/building'. A friendly greeting from neighbors!",
+        "pronunciation": "VILL-kom-men im hows"
+      }
+    },
+    {
+      "id": "scene-23",
+      "title": "Kommen Sie rein",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You step aside and gesture for them to enter, feeling grateful for the friendly welcome."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "You",
+          "text": "Come in!",
+          "germanText": "Kommen Sie rein!"
+        },
+        {
+          "type": "narration",
+          "text": "They step inside and look around at the boxes with understanding smiles."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-23a",
+          "text": "Continue",
+          "nextSceneId": "scene-24"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Kommen Sie rein",
+        "translation": "Come in",
+        "explanation": "A polite invitation. 'Kommen' means 'come', 'Sie' is the formal 'you', and 'rein' means 'in' (into the room).",
+        "pronunciation": "KOM-men zee rine"
+      }
+    },
+    {
+      "id": "scene-24",
+      "title": "Brauchen Sie Hilfe?",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Your neighbors look around at the stacks of boxes, noticing some particularly large ones in the corner."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "Do you need help with the heavy boxes?",
+          "germanText": "Brauchen Sie Hilfe mit den schweren Kisten?"
+        },
+        {
+          "type": "narration",
+          "text": "They're already rolling up their sleeves, ready to help."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-24a",
+          "text": "Yes, that would be great!",
+          "germanText": "Ja, das wäre großartig!",
+          "nextSceneId": "scene-25"
+        },
+        {
+          "id": "choice-24b",
+          "text": "No, I'm fine, but thank you",
+          "germanText": "Nein, es geht, aber danke",
+          "nextSceneId": "scene-25b"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Brauchen Sie Hilfe?",
+        "translation": "Do you need help?",
+        "explanation": "A kind offer. 'Brauchen' means 'to need', and 'Hilfe' means 'help'. Germans are often very helpful to newcomers!",
+        "pronunciation": "BROW-khen zee HIL-feh"
+      }
+    },
+    {
+      "id": "scene-25",
+      "title": "Das ist schwer",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Together, you approach one of the larger boxes. Your neighbor tries to lift it and lets out a small grunt."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "This is heavy! Let's carry it together.",
+          "germanText": "Das ist schwer! Lassen Sie uns es zusammen tragen."
+        },
+        {
+          "type": "narration",
+          "text": "You both grab the box and move it to the living room, working as a team."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-25a",
+          "text": "Continue",
+          "nextSceneId": "scene-26"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Das ist schwer",
+        "translation": "This is heavy",
+        "explanation": "'Schwer' means 'heavy' or 'difficult'. Context tells you which meaning! Here it's clearly about weight.",
+        "pronunciation": "dahs ist shvehr"
+      }
+    },
+    {
+      "id": "scene-25b",
+      "title": "Alleine schaffen",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Your neighbors understand your preference to unpack alone. They smile warmly."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "Okay, but if you need anything, just knock!",
+          "germanText": "Okay, aber wenn Sie etwas brauchen, klopfen Sie einfach!"
+        },
+        {
+          "type": "narration",
+          "text": "They return to their apartment, leaving you to tackle the boxes on your own."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-25c",
+          "text": "Continue unpacking",
+          "nextSceneId": "scene-27"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Klopfen Sie einfach",
+        "translation": "Just knock",
+        "explanation": "'Klopfen' means 'to knock'. 'Einfach' means 'simply' or 'just'. A friendly way to say 'feel free to ask'!",
+        "pronunciation": "KLOP-fen zee INE-fahkh"
+      }
+    },
+    {
+      "id": "scene-26",
+      "title": "Ich helfe Ihnen",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Working together, you and your neighbors make quick progress. The heavy boxes seem lighter when shared."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "Much easier together!",
+          "germanText": "Viel einfacher zusammen!"
+        },
+        {
+          "type": "narration",
+          "text": "You all laugh together, and you're grateful for their help and friendship."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-26a",
+          "text": "Continue",
+          "nextSceneId": "scene-27"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Viel einfacher zusammen",
+        "translation": "Much easier together",
+        "explanation": "'Einfacher' means 'easier', and 'zusammen' means 'together'. A great phrase about cooperation!",
+        "pronunciation": "feel INE-fah-kher tsoo-ZAH-men"
+      }
+    },
+    {
+      "id": "scene-27",
+      "title": "Endlich!",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "After hours of unpacking, the last box is finally empty. You look around at your new home, now filled with your belongings."
+        },
+        {
+          "type": "narration",
+          "text": "Finally! All the boxes are unpacked."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-27a",
+          "text": "Continue",
+          "nextSceneId": "scene-28"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Endlich!",
+        "translation": "Finally!",
+        "explanation": "An expression of relief or satisfaction when something long-awaited happens. Very useful in everyday German!",
+        "pronunciation": "END-likh"
+      }
+    },
+    {
+      "id": "scene-28",
+      "title": "Möchten Sie etwas trinken?",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "Your neighbors have been incredibly helpful. As you finish unpacking, they look at you with warm smiles."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Neighbor",
+          "text": "Would you like something to drink?",
+          "germanText": "Möchten Sie etwas trinken?"
+        },
+        {
+          "type": "narration",
+          "text": "They gesture toward their apartment, inviting you for a break."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-28a",
+          "text": "Continue",
+          "nextSceneId": "scene-29"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Möchten Sie etwas trinken?",
+        "translation": "Would you like something to drink?",
+        "explanation": "A polite offer. 'Möchten' means 'would like', 'etwas' means 'something', and 'trinken' means 'to drink'. Perfect for hospitality!",
+        "pronunciation": "MURKH-ten zee ET-vahs TRIN-ken"
+      }
+    },
+    {
+      "id": "scene-29",
+      "title": "Tee, bitte",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You sit down in their cozy living room. The neighbor brings out a tray with various drink options."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "You",
+          "text": "Tea, please.",
+          "germanText": "Tee, bitte."
+        },
+        {
+          "type": "narration",
+          "text": "They pour you a cup of tea, and you all sit together, chatting in a mix of German and English."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-29a",
+          "text": "Continue",
+          "nextSceneId": "scene-30"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Tee, bitte",
+        "translation": "Tea, please",
+        "explanation": "Simple and clear! 'Tee' means tea (pronounced like the English word), and 'bitte' is always the magic word.",
+        "pronunciation": "teh, BIH-teh"
+      }
+    },
+    {
+      "id": "scene-30",
+      "title": "Es fühlt sich schon wie Zuhause an",
+      "location": "Berlin Apartment",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "As you sit with your new neighbors, sharing tea and stories, you look around at your new apartment building."
+        },
+        {
+          "type": "narration",
+          "text": "It already feels like home."
+        },
+        {
+          "type": "narration",
+          "text": "Berlin is becoming your city, and German is becoming your language."
+        }
+      ],
+      "choices": [],
+      "languageNote": {
+        "phrase": "Es fühlt sich schon wie Zuhause an",
+        "translation": "It already feels like home",
+        "explanation": "A beautiful expression! 'Fühlt sich an' means 'feels like', 'schon' means 'already', and 'Zuhause' means 'home'. A perfect ending phrase.",
+        "pronunciation": "es fuhlt zikh shohn vee TSOO-how-zeh ahn"
+      }
+    }
+  ],
+  "startSceneId": "scene-1"
+}
