@@ -11,59 +11,60 @@ export default function LanguageNote({ note }: LanguageNoteProps) {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="rounded-lg bg-white border border-gray-200 p-6">
+    <div className="rounded-3xl bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-200 shadow-xl p-6 md:p-8">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="mb-4 flex w-full items-center justify-between text-left"
+        className="mb-4 flex w-full items-center justify-between text-left hover:opacity-80 transition-opacity"
       >
-        <h3 className="text-sm font-medium text-gray-900 uppercase tracking-wide">
+        <h3 className="text-base font-bold text-orange-700 uppercase tracking-wider flex items-center gap-2">
+          <span className="text-2xl">💡</span>
           Language Note
         </h3>
-        <span className="text-gray-400">
+        <span className="text-2xl font-bold text-orange-600">
           {isExpanded ? "−" : "+"}
         </span>
       </button>
 
       {isExpanded && (
-        <div className="space-y-4">
-          <div>
-            <div className="mb-2 text-xs font-medium text-gray-500 uppercase">
+        <div className="space-y-5">
+          <div className="bg-white rounded-2xl p-5 border-2 border-yellow-200">
+            <div className="mb-2 text-xs font-bold text-orange-600 uppercase tracking-wider">
               Phrase
             </div>
-            <div className="mb-2 text-2xl font-bold text-gray-900">
+            <div className="mb-2 text-3xl font-bold text-gray-900">
               {note.phrase}
             </div>
-            <div className="text-sm text-gray-500">
+            <div className="text-base text-gray-600 font-medium">
               {note.translation}
             </div>
           </div>
 
-          <div>
-            <div className="mb-1 text-xs font-medium text-gray-500 uppercase">
+          <div className="bg-white rounded-2xl p-5 border-2 border-yellow-200">
+            <div className="mb-2 text-xs font-bold text-orange-600 uppercase tracking-wider">
               Explanation
             </div>
-            <div className="text-sm text-gray-700 leading-relaxed">
+            <div className="text-base text-gray-700 leading-relaxed">
               {note.explanation}
             </div>
           </div>
 
           {note.pronunciation && (
-            <div>
-              <div className="mb-1 text-xs font-medium text-gray-500 uppercase">
+            <div className="bg-white rounded-2xl p-5 border-2 border-yellow-200">
+              <div className="mb-2 text-xs font-bold text-orange-600 uppercase tracking-wider">
                 Pronunciation
               </div>
-              <div className="text-sm font-mono text-gray-700">
+              <div className="text-base font-mono text-gray-800 font-semibold">
                 {note.pronunciation}
               </div>
             </div>
           )}
 
           {note.grammar && (
-            <div>
-              <div className="mb-1 text-xs font-medium text-gray-500 uppercase">
+            <div className="bg-white rounded-2xl p-5 border-2 border-yellow-200">
+              <div className="mb-2 text-xs font-bold text-orange-600 uppercase tracking-wider">
                 Grammar
               </div>
-              <div className="text-sm text-gray-700">
+              <div className="text-base text-gray-700">
                 {note.grammar}
               </div>
             </div>

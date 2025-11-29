@@ -72,21 +72,21 @@ function AdventureContent() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
-      <div className="mx-auto max-w-2xl">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-purple-50 p-4 md:p-8">
+      <div className="mx-auto max-w-3xl">
         {/* Header */}
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <button
               onClick={() => router.push("/")}
-              className="text-sm text-gray-600 hover:text-gray-900"
+              className="rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-all hover:scale-105"
             >
               ← Home
             </button>
             {sceneHistory.length > 1 && (
               <button
                 onClick={handleBack}
-                className="text-sm text-gray-600 hover:text-gray-900"
+                className="rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-all hover:scale-105"
               >
                 ← Back
               </button>
@@ -95,32 +95,32 @@ function AdventureContent() {
         </div>
 
         {/* Scene Card */}
-        <div className="mb-6 rounded-lg">
+        <div className="mb-6 rounded-3xl bg-white shadow-xl p-8 md:p-10">
           {/* Location */}
-          <div className="mb-3 text-sm text-gray-500">
+          <div className="mb-4 text-sm font-medium text-blue-600 uppercase tracking-wide">
             {currentScene.location}
           </div>
 
           {/* Title */}
-          <h1 className="mb-4 text-2xl font-semibold text-gray-900">
+          <h1 className="mb-6 text-3xl md:text-4xl font-bold text-gray-900">
             {currentScene.title}
           </h1>
 
           {/* Content Blocks */}
-          <div className="mb-6 space-y-4">
+          <div className="mb-8 space-y-5">
             {currentScene.contentBlocks.map((block, index) => (
               <div key={index}>
                 {block.type === "narration" ? (
-                  <p className="text-gray-700 leading-relaxed">{block.text}</p>
+                  <p className="text-lg text-gray-700 leading-relaxed">{block.text}</p>
                 ) : (
-                  <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg">
-                    <div className="mb-2 text-xs font-medium text-gray-500 uppercase">
+                  <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-200 p-6 rounded-2xl shadow-sm">
+                    <div className="mb-3 text-xs font-bold text-green-700 uppercase tracking-wider">
                       {block.speaker}
                     </div>
-                    <div className="mb-2 text-2xl font-bold text-gray-900">
+                    <div className="mb-3 text-3xl md:text-4xl font-bold text-gray-900">
                       {block.germanText}
                     </div>
-                    <div className="text-sm text-gray-500">{block.text}</div>
+                    <div className="text-base text-gray-600">{block.text}</div>
                   </div>
                 )}
               </div>
@@ -129,14 +129,14 @@ function AdventureContent() {
 
           {/* Feedback Message */}
           {showFeedback && (
-            <div className="mb-6 rounded-lg bg-gray-100 p-3 text-sm text-gray-700">
+            <div className="mb-6 rounded-2xl bg-green-100 border-2 border-green-300 p-4 text-base font-medium text-green-800 text-center">
               {showFeedback}
             </div>
           )}
 
           {/* Choices */}
           {currentScene.choices.length > 0 && (
-            <div className="space-y-2">
+            <div className="space-y-3">
               {currentScene.choices.map((choice) => (
                 <ChoiceButton
                   key={choice.id}
@@ -155,21 +155,27 @@ function AdventureContent() {
 
           {/* Continue Button (when no choices - end of adventure) */}
           {currentScene.choices.length === 0 && (
-            <div className="mt-6 space-y-4">
-              <div className="rounded-lg bg-gray-100 p-6 text-center">
-                <p className="mb-4 text-gray-700">
-                  Adventure complete! You&apos;ve finished your café experience.
+            <div className="mt-8 space-y-4">
+              <div className="rounded-2xl bg-gradient-to-r from-purple-100 to-pink-100 border-2 border-purple-200 p-8 text-center">
+                <p className="mb-2 text-2xl font-bold text-gray-900">
+                  🎉 Adventure Complete!
+                </p>
+                <p className="text-lg text-gray-700">
+                  You&apos;ve finished your café experience.
                 </p>
               </div>
               <button
                 onClick={handleContinue}
-                className="w-full rounded-lg bg-gray-900 px-6 py-3 text-white hover:bg-gray-800 transition-colors"
+                className="w-full rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-4 text-lg font-bold text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               >
                 Back to Home →
               </button>
             </div>
           )}
         </div>
+
+        {/* Language Note */}
+        <LanguageNote note={currentScene.languageNote} />
       </div>
     </div>
   );
