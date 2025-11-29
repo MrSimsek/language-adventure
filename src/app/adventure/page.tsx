@@ -55,24 +55,8 @@ function AdventureContent() {
   };
 
   const handleContinue = () => {
-    // Check if we're at the last scene of the current scenario
-    const currentIndex = story.scenes.findIndex((s) => s.id === currentSceneId);
-    const isLastScene = currentIndex === story.scenes.length - 1;
-    
-    // Check if we're at the end of a scenario
-    const isEndOfScenario = 
-      (initialSceneId === "scene-1" && currentSceneId === "scene-10") ||
-      (initialSceneId === "scene-11" && currentSceneId === "scene-20") ||
-      (initialSceneId === "scene-21" && currentSceneId === "scene-30") ||
-      isLastScene;
-    
-    if (isEndOfScenario) {
-      // Scenario complete - go back to scenario selection
-      router.push("/scenarios");
-    } else {
-      // Shouldn't happen, but go to scenarios as fallback
-      router.push("/scenarios");
-    }
+    // Adventure complete - go back to home
+    router.push("/");
   };
 
   return (
@@ -81,10 +65,10 @@ function AdventureContent() {
         {/* Header */}
         <div className="mb-6">
           <button
-            onClick={() => router.push("/scenarios")}
+            onClick={() => router.push("/")}
             className="text-sm text-gray-600 hover:text-gray-900"
           >
-            ← Scenarios
+            ← Home
           </button>
         </div>
 
@@ -152,14 +136,14 @@ function AdventureContent() {
             <div className="mt-6 space-y-4">
               <div className="rounded-lg bg-gray-100 p-6 text-center">
                 <p className="mb-4 text-gray-700">
-                  Scenario complete. Ready to try another?
+                  Adventure complete! You've finished your café experience.
                 </p>
               </div>
               <button
                 onClick={handleContinue}
                 className="w-full rounded-lg bg-gray-900 px-6 py-3 text-white hover:bg-gray-800 transition-colors"
               >
-                Choose Another Scenario →
+                Back to Home →
               </button>
             </div>
           )}

@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <Link
-          href="/scenarios"
+          href="/adventure"
           className="inline-block rounded-lg bg-gray-900 px-6 py-3 text-white hover:bg-gray-800 transition-colors"
         >
           Begin →
