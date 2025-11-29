@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import storyData from "@/data/story.json";
 import { Scene, StoryData } from "@/types/story";
 import ChoiceButton from "@/components/ChoiceButton";
 import LanguageNote from "@/components/LanguageNote";
 
-export default function AdventurePage() {
+function AdventureContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const startSceneId = searchParams.get("start");
@@ -169,6 +169,18 @@ export default function AdventurePage() {
         <LanguageNote note={currentScene.languageNote} />
       </div>
     </div>
+  );
+}
+
+export default function AdventurePage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center">
+        <p className="text-gray-500">Loading adventure...</p>
+      </div>
+    }>
+      <AdventureContent />
+    </Suspense>
   );
 }
 
