@@ -35,13 +35,13 @@
           "id": "choice-1a",
           "text": "I would like a coffee.",
           "germanText": "Ich hätte gerne einen Kaffee.",
-          "nextSceneId": "scene-2"
+          "nextSceneId": "scene-1a"
         },
         {
           "id": "choice-1b",
           "text": "A cappuccino, please.",
           "germanText": "Einen Cappuccino, bitte.",
-          "nextSceneId": "scene-2"
+          "nextSceneId": "scene-1a"
         },
         {
           "id": "choice-1c",
@@ -53,7 +53,7 @@
           "id": "choice-1d",
           "text": "Do you speak English?",
           "germanText": "Sprechen Sie Englisch?",
-          "nextSceneId": "scene-2"
+          "nextSceneId": "scene-1b"
         }
       ],
       "languageNote": {
@@ -94,13 +94,13 @@
           "id": "choice-2b",
           "text": "I don't know… maybe a normal coffee.",
           "germanText": "Ich weiß nicht… vielleicht einen normalen Kaffee.",
-          "nextSceneId": "scene-3"
+          "nextSceneId": "scene-2b"
         },
         {
           "id": "choice-2c",
           "text": "How much is it?",
           "germanText": "Was kostet er?",
-          "nextSceneId": "scene-3"
+          "nextSceneId": "scene-2c"
         },
         {
           "id": "choice-2d",
@@ -147,13 +147,13 @@
           "id": "choice-3b",
           "text": "Sounds good… how much is it?",
           "germanText": "Klingt gut… wie viel kostet das?",
-          "nextSceneId": "scene-4"
+          "nextSceneId": "scene-3b"
         },
         {
           "id": "choice-3c",
           "text": "Do you have something strong? I'm very tired.",
           "germanText": "Haben Sie auch etwas Starkes? Ich bin sehr müde.",
-          "nextSceneId": "scene-4"
+          "nextSceneId": "scene-3c"
         },
         {
           "id": "choice-3d",
@@ -194,7 +194,7 @@
           "id": "choice-4a",
           "text": "Wow… what's in it?",
           "germanText": "Wow… was ist da drin?",
-          "nextSceneId": "scene-5"
+          "nextSceneId": "scene-4a"
         },
         {
           "id": "choice-4b",
@@ -206,7 +206,7 @@
           "id": "choice-4c",
           "text": "I actually just wanted coffee…",
           "germanText": "Ich wollte eigentlich nur Kaffee…",
-          "nextSceneId": "scene-5"
+          "nextSceneId": "scene-4c"
         },
         {
           "id": "choice-4d",
@@ -257,7 +257,7 @@
           "id": "choice-5b",
           "text": "Why… is it tingling?",
           "germanText": "Warum… prickelt es?",
-          "nextSceneId": "scene-6"
+          "nextSceneId": "scene-5b"
         },
         {
           "id": "choice-5c",
@@ -269,7 +269,7 @@
           "id": "choice-5d",
           "text": "Pretend to faint dramatically.",
           "germanText": "Dramatisch ohnmächtig werden.",
-          "nextSceneId": "scene-6"
+          "nextSceneId": "scene-5d"
         }
       ],
       "languageNote": {
@@ -304,7 +304,7 @@
           "id": "choice-6a",
           "text": "Try speaking rapid German: 'I… well… uh… today… coffee… language… help!'",
           "germanText": "Ich… also… äh… heute… Kaffee… Sprache… Hilfe!",
-          "nextSceneId": "scene-7"
+          "nextSceneId": "scene-6a"
         },
         {
           "id": "choice-6b",
@@ -316,13 +316,13 @@
           "id": "choice-6c",
           "text": "Get overly confident: 'I can probably speak perfect German now.'",
           "germanText": "Ich kann jetzt bestimmt perfekt Deutsch sprechen.",
-          "nextSceneId": "scene-7"
+          "nextSceneId": "scene-6c"
         },
         {
           "id": "choice-6d",
           "text": "Take another big sip.",
           "germanText": "Noch einen großen Schluck nehmen.",
-          "nextSceneId": "scene-7"
+          "nextSceneId": "scene-6d"
         }
       ],
       "languageNote": {
@@ -363,7 +363,7 @@
           "id": "choice-7b",
           "text": "Ask if you can order it again",
           "germanText": "Fragen, ob Sie es nochmal bestellen können",
-          "nextSceneId": "scene-8"
+          "nextSceneId": "scene-7b"
         },
         {
           "id": "choice-7c",
@@ -377,6 +377,580 @@
         "translation": "A little bit of magic",
         "explanation": "'Bisschen' means 'a little bit' and 'Magie' means 'magic'. The waitress is being playful, but maybe there's something special about this drink!",
         "pronunciation": "ine BIS-khen mah-GEE"
+      }
+    },
+    {
+      "id": "scene-1a",
+      "title": "Einen Kaffee, bitte",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress nods approvingly at your German. She writes down your order with a smile."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Coming right up! Would you like anything else?",
+          "germanText": "Gleich fertig! Möchten Sie noch etwas?"
+        },
+        {
+          "type": "narration",
+          "text": "She seems pleased that you're practicing German, even with a simple order."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1a-1",
+          "text": "No, that's all, thank you.",
+          "germanText": "Nein, das ist alles, danke.",
+          "nextSceneId": "scene-8"
+        },
+        {
+          "id": "choice-1a-2",
+          "text": "Maybe a pastry?",
+          "germanText": "Vielleicht ein Gebäck?",
+          "nextSceneId": "scene-8"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Gleich fertig",
+        "translation": "Coming right up",
+        "explanation": "'Gleich' means 'right away' or 'immediately', and 'fertig' means 'ready' or 'done'. A friendly way to say your order will be ready soon!",
+        "pronunciation": "glikh FEHR-tikh"
+      }
+    },
+    {
+      "id": "scene-1b",
+      "title": "Sprechen Sie Englisch?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's smile becomes a bit more patient. She switches to English, but with a gentle encouragement."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Yes, I do! But I noticed you're trying German - that's wonderful! Would you like to continue in German?",
+          "germanText": "Ja, ich spreche Englisch! Aber ich habe bemerkt, dass Sie Deutsch versuchen - das ist wunderbar! Möchten Sie auf Deutsch weitermachen?"
+        },
+        {
+          "type": "narration",
+          "text": "She's being very supportive, giving you the option to continue in German or switch to English."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1b-1",
+          "text": "Yes, let's continue in German!",
+          "germanText": "Ja, lass uns auf Deutsch weitermachen!",
+          "nextSceneId": "scene-2"
+        },
+        {
+          "id": "choice-1b-2",
+          "text": "I'll try, but English if I get stuck.",
+          "germanText": "Ich versuche es, aber Englisch, wenn ich nicht weiterkomme.",
+          "nextSceneId": "scene-2"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Sprechen Sie Englisch?",
+        "translation": "Do you speak English?",
+        "explanation": "A useful phrase when you're not sure! 'Sprechen' means 'to speak'. Many Germans speak English, but they appreciate when you try German first!",
+        "pronunciation": "SHPRECH-en zee ENG-lish"
+      }
+    },
+    {
+      "id": "scene-2b",
+      "title": "Einen normalen Kaffee",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's enthusiasm doesn't fade. She understands your hesitation and offers a simpler option."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Of course! A regular coffee it is. But if you change your mind about the special, just let me know!",
+          "germanText": "Natürlich! Ein normaler Kaffee. Aber wenn Sie Ihre Meinung über das Besondere ändern, sagen Sie mir Bescheid!"
+        },
+        {
+          "type": "narration",
+          "text": "She brings you a regular coffee, still smiling warmly."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2b-1",
+          "text": "Actually, I'll try the special after all.",
+          "germanText": "Eigentlich probiere ich doch das Besondere.",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-2b-2",
+          "text": "This is perfect, thank you.",
+          "germanText": "Das ist perfekt, danke.",
+          "nextSceneId": "scene-8"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Eigentlich",
+        "translation": "Actually / In fact",
+        "explanation": "'Eigentlich' is a very useful word! It means 'actually' or 'in fact', and is often used when changing your mind or clarifying something.",
+        "pronunciation": "EYE-gent-likh"
+      }
+    },
+    {
+      "id": "scene-2c",
+      "title": "Was kostet er?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress checks the price board and tells you with a friendly smile."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "It's 4.50 euros today - normally 5.50, so it's a good deal!",
+          "germanText": "Er kostet heute 4,50 Euro - normalerweise 5,50, also ein gutes Angebot!"
+        },
+        {
+          "type": "narration",
+          "text": "She seems happy to explain the special price to you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2c-1",
+          "text": "That sounds good, I'll take it!",
+          "germanText": "Das klingt gut, ich nehme es!",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-2c-2",
+          "text": "Hmm, maybe just a regular coffee then.",
+          "germanText": "Hmm, vielleicht doch nur einen normalen Kaffee.",
+          "nextSceneId": "scene-2b"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Was kostet er?",
+        "translation": "How much does it cost?",
+        "explanation": "'Kostet' means 'costs'. This is essential vocabulary for shopping and ordering! Note: prices in German use a comma for decimals.",
+        "pronunciation": "vahs KOS-tet ehr"
+      }
+    },
+    {
+      "id": "scene-3b",
+      "title": "Wie viel kostet das?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress smiles and points to the price board again."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "The latte macchiato with oat milk is 4.50 euros today - it's on special!",
+          "germanText": "Der Latte Macchiato mit Hafermilch kostet heute 4,50 Euro - er ist im Angebot!"
+        },
+        {
+          "type": "narration",
+          "text": "She waits for your decision, pen ready to write your order."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-3b-1",
+          "text": "Perfect, I'll take it!",
+          "germanText": "Perfekt, ich nehme es!",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-3b-2",
+          "text": "That's a bit much for me, just a regular coffee please.",
+          "germanText": "Das ist mir etwas zu teuer, nur einen normalen Kaffee bitte.",
+          "nextSceneId": "scene-2b"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Wie viel kostet das?",
+        "translation": "How much does that cost?",
+        "explanation": "'Wie viel' means 'how much'. This phrase is essential for shopping and understanding prices in German!",
+        "pronunciation": "vee feel KOS-tet dahs"
+      }
+    },
+    {
+      "id": "scene-3c",
+      "title": "Etwas Starkes",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's eyes light up even more. She seems to have the perfect solution for your tiredness."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Oh, if you're tired, I have just the thing! Our 'Morgenblitz' - it's very strong and will wake you up!",
+          "germanText": "Oh, wenn Sie müde sind, habe ich genau das Richtige! Unser 'Morgenblitz' - er ist sehr stark und wird Sie wach machen!"
+        },
+        {
+          "type": "narration",
+          "text": "She looks excited, as if this is her favorite drink to recommend."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-3c-1",
+          "text": "That sounds perfect! I'll try it.",
+          "germanText": "Das klingt perfekt! Ich probiere es.",
+          "nextSceneId": "scene-4"
+        },
+        {
+          "id": "choice-3c-2",
+          "text": "Maybe just a double espresso instead?",
+          "germanText": "Vielleicht doch nur einen doppelten Espresso?",
+          "nextSceneId": "scene-8"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Etwas Starkes",
+        "translation": "Something strong",
+        "explanation": "'Starkes' means 'strong' (neuter form). When ordering coffee, this means you want something with a lot of caffeine!",
+        "pronunciation": "ET-vahs SHTAR-kes"
+      }
+    },
+    {
+      "id": "scene-4a",
+      "title": "Was ist da drin?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's grin widens. She seems to enjoy your curiosity."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Ah, curious! That's the spirit! Try it first, then I'll tell you the secret ingredient.",
+          "germanText": "Ah, neugierig! Das ist der richtige Geist! Probieren Sie es zuerst, dann verrate ich Ihnen die geheime Zutat."
+        },
+        {
+          "type": "narration",
+          "text": "She winks and pushes the cup a bit closer to you, encouraging you to take a sip."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-4a-1",
+          "text": "Okay, I'll try it!",
+          "germanText": "Okay, ich probiere es!",
+          "nextSceneId": "scene-5"
+        },
+        {
+          "id": "choice-4a-2",
+          "text": "Tell me first, then I'll decide.",
+          "germanText": "Sagen Sie es mir zuerst, dann entscheide ich.",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Was ist da drin?",
+        "translation": "What's in it?",
+        "explanation": "'Drin' is a contraction of 'darin' meaning 'in it'. This is a casual way to ask what's inside something!",
+        "pronunciation": "vahs ist dah drin"
+      }
+    },
+    {
+      "id": "scene-4c",
+      "title": "Nur Kaffee",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's expression softens. She understands your preference for something simple."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Of course! No problem at all. I'll bring you a regular coffee right away.",
+          "germanText": "Natürlich! Kein Problem. Ich bringe Ihnen gleich einen normalen Kaffee."
+        },
+        {
+          "type": "narration",
+          "text": "She takes the mysterious drink away and returns moments later with a simple, steaming cup of coffee."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-4c-1",
+          "text": "Thank you, this is perfect.",
+          "germanText": "Danke, das ist perfekt.",
+          "nextSceneId": "scene-8"
+        },
+        {
+          "id": "choice-4c-2",
+          "text": "Actually, I'm curious about that special drink now...",
+          "germanText": "Eigentlich bin ich jetzt neugierig auf das besondere Getränk...",
+          "nextSceneId": "scene-4"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Kein Problem",
+        "translation": "No problem",
+        "explanation": "A very common phrase in German! 'Kein' means 'no' or 'not a', and 'Problem' is the same as in English. Germans use this frequently!",
+        "pronunciation": "kine proh-BLEHM"
+      }
+    },
+    {
+      "id": "scene-5b",
+      "title": "Warum prickelt es?",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress laughs softly, clearly expecting this question."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "That's the magic working! It's a special blend that makes you feel more alert and... well, more connected to German!",
+          "germanText": "Das ist die Magie, die wirkt! Es ist eine besondere Mischung, die Sie wacher macht und... nun ja, mehr mit Deutsch verbindet!"
+        },
+        {
+          "type": "narration",
+          "text": "She watches you with amusement as you process this information."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-5b-1",
+          "text": "That's amazing! I can feel it!",
+          "germanText": "Das ist erstaunlich! Ich kann es spüren!",
+          "nextSceneId": "scene-6"
+        },
+        {
+          "id": "choice-5b-2",
+          "text": "Is this safe?",
+          "germanText": "Ist das sicher?",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Warum prickelt es?",
+        "translation": "Why is it tingling?",
+        "explanation": "'Prickelt' means 'tingles' or 'prickles'. This is a great word for describing unusual sensations!",
+        "pronunciation": "vah-ROOM PRIK-kelt es"
+      }
+    },
+    {
+      "id": "scene-5d",
+      "title": "Dramatisch ohnmächtig",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You dramatically clutch your chest and pretend to faint. The waitress bursts into laughter."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Oh my! You're quite the actor! But I can see you're still breathing, so the drink must be working!",
+          "germanText": "Oh je! Sie sind ein echter Schauspieler! Aber ich sehe, dass Sie noch atmen, also muss das Getränk wirken!"
+        },
+        {
+          "type": "narration",
+          "text": "You both laugh together, and you sit back up, feeling the energy from the drink coursing through you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-5d-1",
+          "text": "Okay, you got me! This is actually amazing.",
+          "germanText": "Okay, Sie haben mich erwischt! Das ist wirklich erstaunlich.",
+          "nextSceneId": "scene-6"
+        },
+        {
+          "id": "choice-5d-2",
+          "text": "I'm still a bit worried about this drink...",
+          "germanText": "Ich bin immer noch etwas besorgt über dieses Getränk...",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Ohnmächtig werden",
+        "translation": "To faint / To pass out",
+        "explanation": "'Ohnmächtig' means 'unconscious' or 'fainted'. A dramatic word, perfect for theatrical moments!",
+        "pronunciation": "OHN-mekh-tikh VAYR-den"
+      }
+    },
+    {
+      "id": "scene-6a",
+      "title": "Rapid German",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You try to speak rapidly in German, but the words come out jumbled and mixed with English. The waitress finds it endearing."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Haha! Slow down! The drink helps, but you still need to practice! Take your time.",
+          "germanText": "Haha! Langsamer! Das Getränk hilft, aber Sie müssen noch üben! Nehmen Sie sich Zeit."
+        },
+        {
+          "type": "narration",
+          "text": "She's very encouraging, and you feel more confident to keep trying."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-6a-1",
+          "text": "You're right, I'll slow down and practice more.",
+          "germanText": "Sie haben recht, ich werde langsamer werden und mehr üben.",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6a-2",
+          "text": "But I feel so energized!",
+          "germanText": "Aber ich fühle mich so energiegeladen!",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Langsamer",
+        "translation": "Slower",
+        "explanation": "'Langsam' means 'slow', and 'langsamer' means 'slower'. A helpful word when learning a new language - it's okay to go slowly!",
+        "pronunciation": "LAHNG-zah-mer"
+      }
+    },
+    {
+      "id": "scene-6c",
+      "title": "Perfekt Deutsch",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress raises an eyebrow, amused by your confidence."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Well, let's test that! Say something in perfect German!",
+          "germanText": "Nun, lass uns das testen! Sagen Sie etwas auf perfektem Deutsch!"
+        },
+        {
+          "type": "narration",
+          "text": "You try to speak perfect German, but realize you still have a lot to learn. She smiles warmly."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-6c-1",
+          "text": "Okay, maybe not perfect yet, but I'm learning!",
+          "germanText": "Okay, vielleicht noch nicht perfekt, aber ich lerne!",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6c-2",
+          "text": "I'll keep practicing!",
+          "germanText": "Ich werde weiter üben!",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Perfekt Deutsch sprechen",
+        "translation": "To speak perfect German",
+        "explanation": "'Perfekt' means 'perfect'. Remember, learning a language is a journey - perfection comes with practice!",
+        "pronunciation": "per-FEKT doytsh SHPRECH-en"
+      }
+    },
+    {
+      "id": "scene-6d",
+      "title": "Noch einen Schluck",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You take another big sip. The effects intensify - you feel incredibly alert and German words are flooding your mind!"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Whoa! Easy there! The effects are stronger with more sips. How are you feeling?",
+          "germanText": "Whoa! Langsam! Die Wirkung ist stärker mit mehr Schlucken. Wie fühlen Sie sich?"
+        },
+        {
+          "type": "narration",
+          "text": "She looks a bit concerned but also amused by your enthusiasm."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-6d-1",
+          "text": "I feel amazing! German is everywhere!",
+          "germanText": "Ich fühle mich großartig! Deutsch ist überall!",
+          "nextSceneId": "scene-7"
+        },
+        {
+          "id": "choice-6d-2",
+          "text": "Maybe that was too much...",
+          "germanText": "Vielleicht war das zu viel...",
+          "nextSceneId": "scene-7"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Noch einen Schluck",
+        "translation": "Another sip",
+        "explanation": "'Noch' means 'another' or 'more', 'einen' means 'a' (masculine), and 'Schluck' means 'sip'. Useful for ordering drinks!",
+        "pronunciation": "nokh INE-en shlook"
+      }
+    },
+    {
+      "id": "scene-7b",
+      "title": "Nochmal bestellen",
+      "location": "Café Sonnenschein",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The waitress's face lights up with delight."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Waitress",
+          "text": "Of course! You can order it anytime. It's our secret menu item - just ask for the 'Morgenblitz'!",
+          "germanText": "Natürlich! Sie können es jederzeit bestellen. Es ist unser Geheimmenü-Artikel - fragen Sie einfach nach dem 'Morgenblitz'!"
+        },
+        {
+          "type": "narration",
+          "text": "She writes something on a small card and hands it to you - it's the secret code word for ordering it again."
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-7b-1",
+          "text": "Thank you! I'll definitely come back!",
+          "germanText": "Danke! Ich komme auf jeden Fall wieder!",
+          "nextSceneId": "scene-8"
+        },
+        {
+          "id": "choice-7b-2",
+          "text": "I'll remember that!",
+          "germanText": "Ich werde mir das merken!",
+          "nextSceneId": "scene-8"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Nochmal bestellen",
+        "translation": "To order again",
+        "explanation": "'Nochmal' means 'again' and 'bestellen' means 'to order'. A useful phrase when you find something you really like!",
+        "pronunciation": "NOKH-mahl beh-SHTEL-len"
       }
     },
     {

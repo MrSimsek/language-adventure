@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, Suspense } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import storyData from "@/data/story.json";
 import { Scene, StoryData } from "@/types/story";
@@ -11,9 +11,9 @@ function AdventureContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const startSceneId = searchParams.get("start");
-  
+
   const story = storyData as StoryData;
-  
+
   // Determine starting scene: use URL param if provided, otherwise default
   const initialSceneId = useMemo(() => {
     if (startSceneId) {
@@ -26,13 +26,9 @@ function AdventureContent() {
 
   const [currentSceneId, setCurrentSceneId] = useState<string>(initialSceneId);
   const [showFeedback, setShowFeedback] = useState<string | null>(null);
+  const [sceneHistory, setSceneHistory] = useState<string[]>([initialSceneId]);
 
   const currentScene = story.scenes.find((s) => s.id === currentSceneId);
-
-  // Reset when starting scene changes (user selects different scenario)
-  useEffect(() => {
-    setCurrentSceneId(initialSceneId);
-  }, [initialSceneId]);
 
   if (!currentScene) {
     return (
@@ -42,15 +38,31 @@ function AdventureContent() {
     );
   }
 
-  const handleChoiceClick = (choiceId: string, nextSceneId: string, feedback?: string) => {
+  const handleChoiceClick = (
+    choiceId: string,
+    nextSceneId: string,
+    feedback?: string
+  ) => {
     if (feedback) {
       setShowFeedback(feedback);
       setTimeout(() => {
         setShowFeedback(null);
         setCurrentSceneId(nextSceneId);
+        setSceneHistory((prev) => [...prev, nextSceneId]);
       }, 2000);
     } else {
       setCurrentSceneId(nextSceneId);
+      setSceneHistory((prev) => [...prev, nextSceneId]);
+    }
+  };
+
+  const handleBack = () => {
+    if (sceneHistory.length > 1) {
+      const newHistory = [...sceneHistory];
+      newHistory.pop(); // Remove current scene
+      const previousSceneId = newHistory[newHistory.length - 1];
+      setSceneHistory(newHistory);
+      setCurrentSceneId(previousSceneId);
     }
   };
 
@@ -63,17 +75,27 @@ function AdventureContent() {
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="mx-auto max-w-2xl">
         {/* Header */}
-        <div className="mb-6">
-          <button
-            onClick={() => router.push("/")}
-            className="text-sm text-gray-600 hover:text-gray-900"
-          >
-            ← Home
-          </button>
+        <div className="mb-6 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => router.push("/")}
+              className="text-sm text-gray-600 hover:text-gray-900"
+            >
+              ← Home
+            </button>
+            {sceneHistory.length > 1 && (
+              <button
+                onClick={handleBack}
+                className="text-sm text-gray-600 hover:text-gray-900"
+              >
+                ← Back
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Scene Card */}
-        <div className="mb-6 rounded-lg bg-white border border-gray-200 p-6">
+        <div className="mb-6 rounded-lg">
           {/* Location */}
           <div className="mb-3 text-sm text-gray-500">
             {currentScene.location}
@@ -87,23 +109,19 @@ function AdventureContent() {
           {/* Content Blocks */}
           <div className="mb-6 space-y-4">
             {currentScene.contentBlocks.map((block, index) => (
-              <div key={index} className="pb-4 border-b border-gray-100 last:border-0">
+              <div key={index}>
                 {block.type === "narration" ? (
-                  <p className="text-gray-700 leading-relaxed">
-                    {block.text}
-                  </p>
+                  <p className="text-gray-700 leading-relaxed">{block.text}</p>
                 ) : (
-                  <>
+                  <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg">
                     <div className="mb-2 text-xs font-medium text-gray-500 uppercase">
                       {block.speaker}
                     </div>
                     <div className="mb-2 text-2xl font-bold text-gray-900">
                       {block.germanText}
                     </div>
-                    <div className="text-sm text-gray-500">
-                      {block.text}
-                    </div>
-                  </>
+                    <div className="text-sm text-gray-500">{block.text}</div>
+                  </div>
                 )}
               </div>
             ))}
@@ -124,7 +142,11 @@ function AdventureContent() {
                   key={choice.id}
                   choice={choice}
                   onClick={() =>
-                    handleChoiceClick(choice.id, choice.nextSceneId, choice.feedback)
+                    handleChoiceClick(
+                      choice.id,
+                      choice.nextSceneId,
+                      choice.feedback
+                    )
                   }
                 />
               ))}
@@ -136,7 +158,7 @@ function AdventureContent() {
             <div className="mt-6 space-y-4">
               <div className="rounded-lg bg-gray-100 p-6 text-center">
                 <p className="mb-4 text-gray-700">
-                  Adventure complete! You've finished your café experience.
+                  Adventure complete! You&apos;ve finished your café experience.
                 </p>
               </div>
               <button
@@ -148,23 +170,29 @@ function AdventureContent() {
             </div>
           )}
         </div>
-
-        {/* Language Note */}
-        <LanguageNote note={currentScene.languageNote} />
       </div>
     </div>
   );
 }
 
+function AdventurePageContent() {
+  const searchParams = useSearchParams();
+  const startSceneId = searchParams.get("start");
+  const key = startSceneId || "default";
+
+  return <AdventureContent key={key} />;
+}
+
 export default function AdventurePage() {
   return (
-    <Suspense fallback={
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-gray-500">Loading adventure...</p>
-      </div>
-    }>
-      <AdventureContent />
+    <Suspense
+      fallback={
+        <div className="flex min-h-screen items-center justify-center">
+          <p className="text-gray-500">Loading adventure...</p>
+        </div>
+      }
+    >
+      <AdventurePageContent />
     </Suspense>
   );
 }
-
