@@ -23,12 +23,26 @@ export default function Home() {
           </div>
         </div>
 
-        <Link
-          href="/adventure"
-          className="inline-block rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 px-10 py-5 text-xl font-bold text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-        >
-          Begin Adventure →
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
+          <Link
+            href="/adventure"
+            className="inline-block rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 px-10 py-5 text-xl font-bold text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+          >
+            Begin Adventure →
+          </Link>
+          <Link
+            href="/game"
+            className="inline-block rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 px-10 py-5 text-xl font-bold text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+          >
+            Play Sentence Game →
+          </Link>
+          <Link
+            href="/stories"
+            className="inline-block rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-500 px-10 py-5 text-xl font-bold text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+          >
+            Read Stories →
+          </Link>
+        </div>
       </main>
     </div>
   );
