@@ -8,10 +8,10 @@ const scenarios = [
     id: "cafe",
     title: "Das Café-Abenteuer",
     englishTitle: "The Café Adventure",
-    startSceneId: "scene-1",
+    startSceneId: "S1",
     icon: "☕",
-    description: "A morning in Berlin turns into a quirky café adventure. Learn essential phrases for ordering coffee, asking questions, and making small talk.",
-    scenes: 10,
+    description: "A morning in Berlin turns into a café adventure. Learn essential phrases for ordering coffee, asking questions, and making small talk.",
+    scenes: 11,
     color: "from-orange-400 to-pink-500",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
@@ -19,32 +19,18 @@ const scenarios = [
     phrases: ["Guten Morgen", "Ich hätte gerne...", "Was bedeutet...?"]
   },
   {
-    id: "bahnhof",
+    id: "train",
     title: "Am Bahnhof",
     englishTitle: "At the Train Station",
-    startSceneId: "scene-11",
+    startSceneId: "T1",
     icon: "🚆",
-    description: "You're late. The train does not care. Navigate Berlin's Hauptbahnhof, ask for directions, and learn travel vocabulary.",
-    scenes: 10,
+    description: "Navigate Berlin's Hauptbahnhof to buy a train ticket. Learn travel vocabulary, ask for help, and purchase your ticket to Munich.",
+    scenes: 9,
     color: "from-blue-400 to-cyan-500",
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
     textColor: "text-blue-700",
-    phrases: ["Entschuldigung", "Welcher Bahnsteig?", "Ich muss nach..."]
-  },
-  {
-    id: "wohnung",
-    title: "Die neue Wohnung",
-    englishTitle: "The New Apartment",
-    startSceneId: "scene-21",
-    icon: "🏠",
-    description: "A classic Berlin renter's experience. Meet your neighbor, unpack boxes, and learn phrases for everyday life and hospitality.",
-    scenes: 10,
-    color: "from-purple-400 to-indigo-500",
-    bgColor: "bg-purple-50",
-    borderColor: "border-purple-200",
-    textColor: "text-purple-700",
-    phrases: ["Willkommen im Haus", "Brauchen Sie Hilfe?", "Es fühlt sich wie Zuhause an"]
+    phrases: ["Entschuldigung", "Fahrkarte", "Bahnsteig", "Hin und zurück"]
   }
 ];
 
@@ -52,39 +38,65 @@ export default function ScenariosPage() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
-      <div className="mx-auto max-w-4xl">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-purple-50 p-4 md:p-8">
+      <div className="mx-auto max-w-5xl">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <button
             onClick={() => router.push("/")}
-            className="mb-6 text-sm text-gray-600 hover:text-gray-900"
+            className="mb-6 rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-all hover:scale-105"
           >
             ← Home
           </button>
-          <h1 className="mb-2 text-3xl font-semibold text-gray-900">
+          <h1 className="mb-2 text-4xl md:text-5xl font-bold text-gray-900">
             Choose Your Adventure
           </h1>
+          <p className="text-lg text-gray-600">
+            Select a scenario to practice German in real-life situations
+          </p>
         </div>
 
         {/* Scenario Cards */}
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {scenarios.map((scenario) => (
             <Link
               key={scenario.id}
-              href={`/adventure?start=${scenario.startSceneId}`}
+              href={`/adventure?story=${scenario.id}&start=${scenario.startSceneId}`}
             >
-              <div className="h-full rounded-lg bg-white border border-gray-200 p-6 hover:border-gray-300 transition-colors">
-                <div className="mb-3 text-3xl">{scenario.icon}</div>
-                <h2 className="mb-1 text-xl font-semibold text-gray-900">
+              <div className={`h-full rounded-3xl ${scenario.bgColor} border-2 ${scenario.borderColor} shadow-lg p-8 hover:shadow-xl hover:scale-105 transition-all cursor-pointer`}>
+                <div className="mb-4 text-5xl">{scenario.icon}</div>
+                <h2 className="mb-2 text-2xl font-bold text-gray-900">
                   {scenario.title}
                 </h2>
-                <p className="mb-3 text-sm text-gray-500">
+                <p className="mb-4 text-base text-gray-600 italic">
                   {scenario.englishTitle}
                 </p>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="mb-6 text-base text-gray-700 leading-relaxed">
                   {scenario.description}
                 </p>
+                <div className="mb-4">
+                  <div className="text-sm font-semibold text-gray-600 mb-2">
+                    Key phrases you'll learn:
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {scenario.phrases.map((phrase, index) => (
+                      <span
+                        key={index}
+                        className={`rounded-lg ${scenario.bgColor} border ${scenario.borderColor} px-3 py-1 text-sm font-medium ${scenario.textColor}`}
+                      >
+                        {phrase}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center justify-between mt-6 pt-6 border-t-2 border-gray-200">
+                  <div className="text-sm text-gray-600">
+                    {scenario.scenes} scenes
+                  </div>
+                  <div className={`text-sm font-bold ${scenario.textColor}`}>
+                    Start Adventure →
+                  </div>
+                </div>
               </div>
             </Link>
           ))}

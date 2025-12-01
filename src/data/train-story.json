@@ -1,0 +1,644 @@
+{
+  "scenes": [
+    {
+      "id": "T1",
+      "title": "At the Train Station",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You arrive at Berlin Hauptbahnhof. The station is busy with travelers. You need to buy a ticket to Munich."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T1-A",
+          "text": "Go to the ticket counter",
+          "germanText": "Zum Schalter gehen",
+          "nextSceneId": "T2-Counter"
+        },
+        {
+          "id": "T1-B",
+          "text": "Use the ticket machine",
+          "germanText": "Den Automaten benutzen",
+          "nextSceneId": "T2-Machine"
+        },
+        {
+          "id": "T1-C",
+          "text": "Ask someone for help",
+          "germanText": "Jemanden um Hilfe bitten",
+          "nextSceneId": "T2-Help"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Hauptbahnhof",
+        "translation": "Main train station",
+        "explanation": "The main train station in a German city. 'Haupt' means 'main' and 'Bahnhof' means 'train station'.",
+        "pronunciation": "HOWPT-bahn-hof"
+      }
+    },
+    {
+      "id": "T2-Counter",
+      "title": "At the Ticket Counter",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Good morning! How can I help you?",
+          "germanText": "Guten Tag! Wie kann ich Ihnen helfen?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "T2C-A",
+          "text": "I would like a ticket to Munich, please.",
+          "germanText": "Ich hätte gerne eine Fahrkarte nach München, bitte.",
+          "nextSceneId": "T3-Destination"
+        },
+        {
+          "id": "T2C-B",
+          "text": "One ticket to Munich.",
+          "germanText": "Eine Fahrkarte nach München.",
+          "nextSceneId": "T3-Destination"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Fahrkarte",
+        "translation": "Ticket",
+        "explanation": "The word for train ticket. 'Fahr' comes from 'fahren' (to travel) and 'Karte' means 'card' or 'ticket'.",
+        "pronunciation": "FAHR-kar-teh"
+      }
+    },
+    {
+      "id": "T2-Machine",
+      "title": "At the Ticket Machine",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You approach the ticket machine. The screen shows many options in German."
+        },
+        {
+          "type": "narration",
+          "text": "You see buttons for different destinations and ticket types."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T2M-A",
+          "text": "Try to use the machine",
+          "germanText": "Den Automaten versuchen",
+          "nextSceneId": "T3-MachineHelp"
+        },
+        {
+          "id": "T2M-B",
+          "text": "Go to the counter instead",
+          "germanText": "Zum Schalter gehen",
+          "nextSceneId": "T2-Counter"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Automat",
+        "translation": "Machine",
+        "explanation": "A ticket machine. Very common at German train stations!",
+        "pronunciation": "OW-toh-maht"
+      }
+    },
+    {
+      "id": "T2-Help",
+      "title": "Asking for Help",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You approach a friendly-looking person near the information desk."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "You",
+          "text": "Excuse me, where can I buy a ticket?",
+          "germanText": "Entschuldigung, wo kann ich eine Fahrkarte kaufen?"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Helper",
+          "text": "Over there at the counter, or you can use the machines.",
+          "germanText": "Dort am Schalter, oder Sie können die Automaten benutzen."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T2H-A",
+          "text": "Thank you! Go to counter",
+          "germanText": "Danke! Zum Schalter gehen",
+          "nextSceneId": "T2-Counter"
+        },
+        {
+          "id": "T2H-B",
+          "text": "Thank you! Try the machine",
+          "germanText": "Danke! Den Automaten versuchen",
+          "nextSceneId": "T2-Machine"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Entschuldigung",
+        "translation": "Excuse me",
+        "explanation": "A polite way to get someone's attention or apologize. Very useful in Germany!",
+        "pronunciation": "ent-SHUL-di-goong"
+      }
+    },
+    {
+      "id": "T3-Destination",
+      "title": "Choosing Your Destination",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "When would you like to travel?",
+          "germanText": "Wann möchten Sie fahren?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "T3D-A",
+          "text": "Today, please.",
+          "germanText": "Heute, bitte.",
+          "nextSceneId": "T4-Time"
+        },
+        {
+          "id": "T3D-B",
+          "text": "Tomorrow morning.",
+          "germanText": "Morgen früh.",
+          "nextSceneId": "T4-Time"
+        },
+        {
+          "id": "T3D-C",
+          "text": "What does 'fahren' mean?",
+          "germanText": "Was bedeutet 'fahren'?",
+          "nextSceneId": "T3-Explain"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Wann möchten Sie fahren?",
+        "translation": "When would you like to travel?",
+        "explanation": "'Wann' means 'when', 'möchten' means 'would like', and 'fahren' means 'to travel' or 'to go'.",
+        "pronunciation": "vahn MURKH-ten zee FAH-ren"
+      }
+    },
+    {
+      "id": "T3-Explain",
+      "title": "Understanding 'Fahren'",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "'Fahren' means 'to travel' or 'to go'. For example, 'Ich fahre nach München' means 'I'm traveling to Munich'.",
+          "germanText": "'Fahren' heißt 'to travel' oder 'to go'. Zum Beispiel: 'Ich fahre nach München' heißt 'I'm traveling to Munich'."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T3E-A",
+          "text": "Thank you! Today, please.",
+          "germanText": "Danke! Heute, bitte.",
+          "nextSceneId": "T4-Time"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Fahren",
+        "translation": "To travel / To go",
+        "explanation": "A very common verb in German. Used for traveling by train, car, or any vehicle.",
+        "pronunciation": "FAH-ren"
+      }
+    },
+    {
+      "id": "T3-MachineHelp",
+      "title": "Using the Ticket Machine",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You try to use the machine, but the interface is confusing. A station employee notices and offers help."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Employee",
+          "text": "Can I help you? The machines can be tricky.",
+          "germanText": "Kann ich Ihnen helfen? Die Automaten können kompliziert sein."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T3M-A",
+          "text": "Yes, please help me.",
+          "germanText": "Ja, bitte helfen Sie mir.",
+          "nextSceneId": "T2-Counter"
+        },
+        {
+          "id": "T3M-B",
+          "text": "I'll try the counter instead.",
+          "germanText": "Ich gehe zum Schalter.",
+          "nextSceneId": "T2-Counter"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Kann ich Ihnen helfen?",
+        "translation": "Can I help you?",
+        "explanation": "A polite offer of help. 'Kann' means 'can', 'Ihnen' is the formal 'you'.",
+        "pronunciation": "kahn ikh EE-nen HEL-fen"
+      }
+    },
+    {
+      "id": "T4-Time",
+      "title": "Choosing Departure Time",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "What time would you like to depart?",
+          "germanText": "Um wie viel Uhr möchten Sie abfahren?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "T4T-A",
+          "text": "At 10 o'clock.",
+          "germanText": "Um 10 Uhr.",
+          "nextSceneId": "T5-TicketType"
+        },
+        {
+          "id": "T4T-B",
+          "text": "The next train, please.",
+          "germanText": "Den nächsten Zug, bitte.",
+          "nextSceneId": "T5-TicketType"
+        },
+        {
+          "id": "T4T-C",
+          "text": "What does 'abfahren' mean?",
+          "germanText": "Was bedeutet 'abfahren'?",
+          "nextSceneId": "T4-ExplainAbfahren"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Um wie viel Uhr?",
+        "translation": "At what time?",
+        "explanation": "A way to ask for the time. 'Um' means 'at', 'wie viel' means 'how much/many', and 'Uhr' means 'o'clock'.",
+        "pronunciation": "oom vee feel oor"
+      }
+    },
+    {
+      "id": "T4-ExplainAbfahren",
+      "title": "Understanding 'Abfahren'",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "'Abfahren' means 'to depart'. The train departs from the platform.",
+          "germanText": "'Abfahren' heißt 'to depart'. Der Zug fährt vom Bahnsteig ab."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T4E-A",
+          "text": "Thank you! At 10 o'clock.",
+          "germanText": "Danke! Um 10 Uhr.",
+          "nextSceneId": "T5-TicketType"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Abfahren",
+        "translation": "To depart",
+        "explanation": "Used when a train or vehicle leaves. 'Ab' is a prefix meaning 'away' or 'off'.",
+        "pronunciation": "AHP-fah-ren"
+      }
+    },
+    {
+      "id": "T5-TicketType",
+      "title": "Choosing Ticket Type",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Would you like a one-way ticket or round trip?",
+          "germanText": "Möchten Sie eine einfache Fahrt oder hin und zurück?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "T5T-A",
+          "text": "One-way, please.",
+          "germanText": "Einfache Fahrt, bitte.",
+          "nextSceneId": "T6-Price"
+        },
+        {
+          "id": "T5T-B",
+          "text": "Round trip, please.",
+          "germanText": "Hin und zurück, bitte.",
+          "nextSceneId": "T6-Price"
+        },
+        {
+          "id": "T5T-C",
+          "text": "What's the difference?",
+          "germanText": "Was ist der Unterschied?",
+          "nextSceneId": "T5-Explain"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Hin und zurück",
+        "translation": "Round trip",
+        "explanation": "'Hin' means 'there' and 'zurück' means 'back'. Together they mean a round trip ticket.",
+        "pronunciation": "hin oont tsoo-RUEK"
+      }
+    },
+    {
+      "id": "T5-Explain",
+      "title": "Ticket Types Explained",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "A one-way ticket is 'einfache Fahrt' - you go one direction. Round trip is 'hin und zurück' - you go and come back.",
+          "germanText": "Eine einfache Fahrt ist eine Richtung. Hin und zurück bedeutet, Sie fahren hin und zurück."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T5E-A",
+          "text": "One-way, please.",
+          "germanText": "Einfache Fahrt, bitte.",
+          "nextSceneId": "T6-Price"
+        },
+        {
+          "id": "T5E-B",
+          "text": "Round trip, please.",
+          "germanText": "Hin und zurück, bitte.",
+          "nextSceneId": "T6-Price"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Einfache Fahrt",
+        "translation": "One-way ticket",
+        "explanation": "'Einfach' means 'simple' or 'single', and 'Fahrt' means 'trip' or 'journey'.",
+        "pronunciation": "INE-fah-kheh fahrt"
+      }
+    },
+    {
+      "id": "T6-Price",
+      "title": "Ticket Price",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "That will be 89 euros.",
+          "germanText": "Das macht 89 Euro."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T6P-A",
+          "text": "Okay, I'll take it.",
+          "germanText": "Okay, ich nehme es.",
+          "nextSceneId": "T7-Payment"
+        },
+        {
+          "id": "T6P-B",
+          "text": "That's expensive! Is there a cheaper option?",
+          "germanText": "Das ist teuer! Gibt es eine günstigere Option?",
+          "nextSceneId": "T6-Discount"
+        },
+        {
+          "id": "T6P-C",
+          "text": "Could you repeat that?",
+          "germanText": "Können Sie das bitte wiederholen?",
+          "nextSceneId": "T6-Repeat"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Das macht",
+        "translation": "That will be / That makes",
+        "explanation": "A common way to state the price. 'Macht' means 'makes'.",
+        "pronunciation": "dahs mahkht"
+      }
+    },
+    {
+      "id": "T6-Discount",
+      "title": "Looking for Discounts",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "There's a savings fare for 49 euros if you book in advance, but today it's 89 euros.",
+          "germanText": "Es gibt ein Sparpreis für 49 Euro bei Vorabbuchung, aber heute kostet es 89 Euro."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T6D-A",
+          "text": "I'll take the regular ticket.",
+          "germanText": "Ich nehme das normale Ticket.",
+          "nextSceneId": "T7-Payment"
+        },
+        {
+          "id": "T6D-B",
+          "text": "What is 'Sparpreis'?",
+          "germanText": "Was ist 'Sparpreis'?",
+          "nextSceneId": "T6-ExplainSparpreis"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Sparpreis",
+        "translation": "Savings fare",
+        "explanation": "A discounted ticket price. 'Spar' comes from 'sparen' (to save) and 'Preis' means 'price'.",
+        "pronunciation": "SHPAHR-price"
+      }
+    },
+    {
+      "id": "T6-ExplainSparpreis",
+      "title": "Understanding 'Sparpreis'",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "'Sparpreis' is a discounted ticket. You need to book in advance to get this price.",
+          "germanText": "'Sparpreis' ist ein ermäßigtes Ticket. Sie müssen im Voraus buchen, um diesen Preis zu bekommen."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T6ES-A",
+          "text": "I'll take the regular ticket.",
+          "germanText": "Ich nehme das normale Ticket.",
+          "nextSceneId": "T7-Payment"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Im Voraus",
+        "translation": "In advance",
+        "explanation": "A phrase meaning 'ahead of time' or 'in advance'. Useful for booking!",
+        "pronunciation": "im foh-ROWS"
+      }
+    },
+    {
+      "id": "T6-Repeat",
+      "title": "Price Repeated",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Of course. That's 89 euros.",
+          "germanText": "Natürlich. Das sind 89 Euro."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T6R-A",
+          "text": "Thank you. I'll take it.",
+          "germanText": "Danke. Ich nehme es.",
+          "nextSceneId": "T7-Payment"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Natürlich",
+        "translation": "Of course",
+        "explanation": "A polite way to say 'of course' or 'naturally'.",
+        "pronunciation": "nah-TUER-likh"
+      }
+    },
+    {
+      "id": "T7-Payment",
+      "title": "Payment",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "How would you like to pay?",
+          "germanText": "Wie möchten Sie bezahlen?"
+        }
+      ],
+      "choices": [
+        {
+          "id": "T7P-A",
+          "text": "By card, please.",
+          "germanText": "Mit Karte, bitte.",
+          "nextSceneId": "T8-Receive"
+        },
+        {
+          "id": "T7P-B",
+          "text": "Cash, please.",
+          "germanText": "Bar, bitte.",
+          "nextSceneId": "T8-Receive"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Wie möchten Sie bezahlen?",
+        "translation": "How would you like to pay?",
+        "explanation": "A common question when paying. 'Bezahlen' means 'to pay'.",
+        "pronunciation": "vee MURKH-ten zee beh-TSAH-len"
+      }
+    },
+    {
+      "id": "T8-Receive",
+      "title": "Receiving Your Ticket",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "The ticket agent processes your payment and prints your ticket."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "Here is your ticket. Platform 5, departure at 10:15.",
+          "germanText": "Hier ist Ihre Fahrkarte. Bahnsteig 5, Abfahrt um 10:15 Uhr."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T8R-A",
+          "text": "Thank you very much!",
+          "germanText": "Vielen Dank!",
+          "nextSceneId": "T9-Complete"
+        },
+        {
+          "id": "T8R-B",
+          "text": "What does 'Bahnsteig' mean?",
+          "germanText": "Was bedeutet 'Bahnsteig'?",
+          "nextSceneId": "T8-Explain"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Bahnsteig",
+        "translation": "Platform",
+        "explanation": "The platform where your train departs. 'Bahn' means 'railway' and 'Steig' means 'path' or 'way'.",
+        "pronunciation": "BAHN-shtike"
+      }
+    },
+    {
+      "id": "T8-Explain",
+      "title": "Understanding 'Bahnsteig'",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "dialogue",
+          "speaker": "Ticket Agent",
+          "text": "'Bahnsteig' is the platform where your train will arrive. Look for the signs with numbers.",
+          "germanText": "'Bahnsteig' ist der Platz, wo Ihr Zug ankommt. Schauen Sie nach den Schildern mit Nummern."
+        }
+      ],
+      "choices": [
+        {
+          "id": "T8E-A",
+          "text": "Thank you!",
+          "germanText": "Danke!",
+          "nextSceneId": "T9-Complete"
+        }
+      ],
+      "languageNote": {
+        "phrase": "Schauen Sie nach",
+        "translation": "Look for",
+        "explanation": "A phrase meaning 'to look for' something. 'Schauen' means 'to look'.",
+        "pronunciation": "SHOW-en zee nahkh"
+      }
+    },
+    {
+      "id": "T9-Complete",
+      "title": "Ticket Purchase Complete",
+      "location": "Berlin Hauptbahnhof",
+      "contentBlocks": [
+        {
+          "type": "narration",
+          "text": "You have successfully purchased your train ticket to Munich!"
+        },
+        {
+          "type": "narration",
+          "text": "You feel more confident navigating German train stations and communicating in German."
+        },
+        {
+          "type": "narration",
+          "text": "With your ticket in hand, you head toward platform 5, ready for your journey."
+        }
+      ],
+      "choices": [],
+      "languageNote": {
+        "phrase": "Reise",
+        "translation": "Journey",
+        "explanation": "The word for a journey or trip. You're ready for your 'Reise' to Munich!",
+        "pronunciation": "RYE-zeh"
+      }
+    }
+  ],
+  "startSceneId": "T1"
+}
+

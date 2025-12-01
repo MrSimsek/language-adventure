@@ -2,7 +2,8 @@
 
 import { useState, useMemo, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import storyData from "@/data/story.json";
+import cafeStoryData from "@/data/story.json";
+import trainStoryData from "@/data/train-story.json";
 import { Scene, StoryData } from "@/types/story";
 import ChoiceButton from "@/components/ChoiceButton";
 
@@ -10,8 +11,15 @@ function AdventureContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const startSceneId = searchParams.get("start");
+  const storyId = searchParams.get("story") || "cafe";
 
-  const story = storyData as StoryData;
+  // Load the appropriate story
+  const story = useMemo(() => {
+    if (storyId === "train") {
+      return trainStoryData as StoryData;
+    }
+    return cafeStoryData as StoryData;
+  }, [storyId]);
 
   // Determine starting scene: use URL param if provided, otherwise default
   const initialSceneId = useMemo(() => {

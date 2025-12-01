@@ -25,10 +25,10 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
           <Link
-            href="/adventure"
+            href="/scenarios"
             className="inline-block rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 px-10 py-5 text-xl font-bold text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
-            Begin Adventure →
+            Choose Adventure →
           </Link>
           <Link
             href="/game"
