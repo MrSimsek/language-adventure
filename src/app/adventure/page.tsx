@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import storyData from "@/data/story.json";
 import { Scene, StoryData } from "@/types/story";
 import ChoiceButton from "@/components/ChoiceButton";
-import LanguageNote from "@/components/LanguageNote";
 
 function AdventureContent() {
   const router = useRouter();
@@ -173,9 +172,6 @@ function AdventureContent() {
             </div>
           )}
         </div>
-
-        {/* Language Note */}
-        <LanguageNote note={currentScene.languageNote} />
       </div>
     </div>
   );
